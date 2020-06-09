@@ -41,3 +41,9 @@ sudo ./server
 ```bash=
 ./client 127.0.0.1
 ```
+
+* apparmor
+```bash=
+sudo mv var.Y.ProgramY  /etc/apparmor.d/var.Y.ProgramY
+sudo apparmor_parser -r /etc/apparmor.d/var.Y.ProgramY
+```
