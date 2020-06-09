@@ -1,0 +1,55 @@
+# Last Modified: 0850744
+#include <tunables/global>
+
+/var/Y/ProgramY {
+  #include <abstractions/base>
+  #include <abstractions/bash>
+  #include <abstractions/consoles>
+
+  allow /var/Y/ProgramY mrix,
+
+  allow /var/Y/** rw,
+
+  deny network ax25,
+  deny network ipx,
+  deny network appletalk,
+  deny network netrom,
+  deny network bridge,
+  deny network atmpvc,
+  deny network x25,
+  deny network rose,
+  deny network netbeui,
+  deny network security,
+  deny network key,
+  deny network packet,
+  deny network ash,
+  deny network econet,
+  deny network atmsvc,
+  deny network sna,
+  deny network irda,
+  deny network pppox,
+  deny network wanpipe,
+  deny network bluetooth,
+  deny network netlink,
+  deny network unix,
+  deny network rds,
+  deny network llc,
+  deny network can,
+  deny network tipc,
+  deny network iucv,
+  deny network rxrpc,
+  deny network isdn,
+  deny network phonet,
+  deny network ieee802154,
+  deny network caif,
+  deny network alg,
+  deny network nfc,
+  deny network vsock,
+  deny network mpls,
+  deny network ib,
+  deny network inet,
+  deny network inet6,
+  deny network raw,
+
+
+}
